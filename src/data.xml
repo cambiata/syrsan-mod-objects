@@ -12,6 +12,7 @@ Följande attribut kan användas för <data>-elementet:
    title : Exemplets titel/rubrik
    info : Kan användas för textinformation om hur övningen går till eller liknande. 
    readyMessage : Meddelande som visas när övningen är genomförd
+   readyGoTo: url till sida som "Gå vidare >"-knappen hänvisar till när exemplet är avklarat
 
 Följande attribut kan användas för <item>-elementet:
 
@@ -21,20 +22,14 @@ Följande attribut kan användas för <item>-elementet:
 
 ------------------------------------------------------------------------------------------>
 
-<data title="Moln (latinska benämningar)" info="Kombinera ord och bild" readyMessage="Bra!" readyGoTo="http://wikipedia.se">
+<data title="Övningsrubrik" info="Information om övningen" readyMessage="Uppdraget slutfört!" >
    
-   <item picture="pictures/calvus.jpg" correctTag="calvus" verifySpelling="true" />
+   <item picture="pictures/elephant.png" correctTag="elephant" verifySpelling="false" />
    
-   <item picture="pictures/cirrus1.jpg" correctTag="cirrus" verifySpelling="true" />
-
-   <item picture="pictures/cirrus2.jpg" correctTag="cirrus" verifySpelling="true" />
-
-   <item picture="pictures/cumulus1.jpg" correctTag="cumulus" verifySpelling="true" />
-
-   <item picture="pictures/cumulus2.jpg" correctTag="cumulus" verifySpelling="true" />
+   <item picture="pictures/chimp.png" correctTag="chimpanzee"  />
    
-   <item picture="pictures/nimbostratus.jpg" correctTag="nimbostratus" verifySpelling="true" />
-
-   <item picture="pictures/stratus.jpg" correctTag="stratus" verifySpelling="true" />
-
+   <item picture="pictures/rhino.png" correctTag="rhinoceros"  />
+   
+   <item picture="pictures/zebras.png" correctTag="zebra" target="false" />
+   
 </data>
