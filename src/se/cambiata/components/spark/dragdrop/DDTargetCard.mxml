@@ -10,7 +10,6 @@
 		 >
 	<fx:Script>
 		<![CDATA[
-			import flight.commands.IUndoableCommand;
 			
 			import mx.core.IUIComponent;
 			import mx.core.IVisualElement;

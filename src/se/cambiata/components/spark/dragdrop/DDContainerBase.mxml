@@ -13,8 +13,8 @@
 			import mx.core.IVisualElement;
 			import mx.events.FlexEvent;
 			
-			import se.cambiata.utils.StringUtils;
-			import se.cambiata.utils.calculators.IStringSim;
+			import se.cambiata.utils.string.StringUtils;
+			import se.cambiata.utils.string.calculators.IStringSim;
 			
 			import spark.skins.spark.PanelSkin;
 

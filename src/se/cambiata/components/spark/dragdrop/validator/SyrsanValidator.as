@@ -1,6 +1,6 @@
 package se.cambiata.components.spark.dragdrop.validator
 {
-	import se.cambiata.utils.StringUtils;
+	import se.cambiata.utils.string.StringUtils;
 
 	public class SyrsanValidator
 	{
