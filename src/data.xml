@@ -21,7 +21,7 @@ Följande attribut kan användas för <item>-elementet:
 
 ------------------------------------------------------------------------------------------>
 
-<data title="Moln (latinska benämningar)" info="Kombinera ord och bild" readyMessage="Bra!" >
+<data title="Moln (latinska benämningar)" info="Kombinera ord och bild" readyMessage="Bra!" readyGoTo="http://wikipedia.se">
    
    <item picture="pictures/calvus.jpg" correctTag="calvus" verifySpelling="true" />
    

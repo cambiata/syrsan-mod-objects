@@ -5,7 +5,10 @@
 		 creationComplete="init(event)"
 		 
 		 >
+	
 
+	
+	
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 		<mx:NumberFormatter id="numFormat" precision="0"   />
@@ -64,7 +67,10 @@
 				this.readyMessage = readyMessage;
 			
 			for each (var item:XML in xml.item) {
-				trace('hehe', item.@id);
+				
+				
+				
+				this.readyGoTo = xml.@readyGoTo;
 				
 				
 				var picture:String = item.@picture;
@@ -161,6 +167,7 @@
 		private function onComplete(event:Event): void {
 			
 			Alert.show(this.readyMessage);
+			this.btnGoTo.enabled = true;
 		}
 
 
@@ -169,6 +176,17 @@
 			// TODO Auto-generated method stub
 			this.loadXml(this.xmlFile);
 		}
+		
+		private var readyGoTo:String = '';
+		protected function onBtnGoTo(event:MouseEvent):void
+		{
+			// TODO Auto-generated method stub
+			navigateToURL(new URLRequest(readyGoTo));
+			
+		}
+		
+		
+		
 
 	]]>
 </fx:Script>	
@@ -177,7 +195,22 @@
 		<s:Label width="100%" text="information" left="8" top="8" id="lblInfo" />
 		<s:Label left="8" bottom="8" text="{numFormat.format(this.panelTargets.result * 100)}%" />
 		<aaronhardy:ProgressBar id="progress" left="70" bottom="8" value="{this.panelTargets.result}" maximum="1" width="160" skinClass="com.aaronhardy.ProgressBarSkin" />
-		<s:Button id="btnClean" label="Rensa" right="8" bottom="8" click="onButtonClean(event)" />
+		<s:Button id="btnClean"
+				  label="Rensa"
+				  right="126"
+				  bottom="8"
+				  click="onButtonClean(event)"/>
+		<s:Button id="btnGoTo"
+				  label="Gå vidare >"
+				  right="8"
+				  bottom="8"
+				  width="110"
+				  enabled="false"
+				  click="onBtnGoTo(event)"
+				  />		
+		
+		
+		
 	</s:Panel>
 	
 	<dragdrop:DDPanelCards left="0" width="300" bottom="0" id="panelCards" top="90">
